@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JARVO | Equipamiento para tu ruta</title>
+<style>
+:root{--black:#0B0B0D;--white:#F5F5F5;--red:#E21D2F;--graphite:#252529;--muted:#a6a6ad}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.5}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(11,11,13,.94);backdrop-filter:blur(12px);border-bottom:1px solid #29292e}
+.nav{max-width:1180px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:2px;font-size:25px}
+.logo-mark{width:35px;height:35px;background:var(--red);clip-path:polygon(0 0,100% 0,100% 22%,42% 22%,42% 100%,0 100%)}
+nav{display:flex;gap:25px;font-size:14px;color:#ddd}
+nav a:hover{color:var(--red)}
+.cart{border:1px solid #4a4a50;padding:9px 14px;border-radius:22px;font-size:14px}
+.hero{min-height:610px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 30%,#3c1017 0,#160b0f 25%,var(--black) 60%)}
+.hero:after{content:"";position:absolute;width:620px;height:620px;border:1px solid #51212a;border-radius:50%;right:-180px;top:-100px;box-shadow:0 0 0 55px #1b1014,0 0 0 56px #3b171e}
+.hero-content{max-width:1180px;width:100%;padding:75px 24px;position:relative;z-index:2}
+.kicker{color:var(--red);font-size:13px;font-weight:bold;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(42px,7vw,82px);line-height:.98;max-width:700px;text-transform:uppercase;letter-spacing:-3px}
+h1 span{color:var(--red)}
+.hero p{max-width:520px;color:#c7c7cc;margin:25px 0;font-size:18px}
+.btn{display:inline-block;background:var(--red);padding:14px 22px;border-radius:5px;font-weight:bold;margin-right:10px}
+.btn.secondary{background:transparent;border:1px solid #666}
+.btn:hover{transform:translateY(-2px)}
+section{max-width:1180px;margin:auto;padding:70px 24px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px;gap:20px}
+h2{font-size:34px;letter-spacing:-1px}
+.section-head p{color:var(--muted);max-width:450px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--graphite);border:1px solid #36363d;border-radius:10px;overflow:hidden;transition:.2s}
+.card:hover{transform:translateY(-5px);border-color:var(--red)}
+.product-img{height:210px;display:grid;place-items:center;background:linear-gradient(135deg,#303036,#151519);font-size:64px}
+.card-body{padding:20px}
+.tag{color:var(--red);font-size:11px;font-weight:bold;letter-spacing:1px;text-transform:uppercase}
+.card h3{margin:8px 0;font-size:20px}
+.card p{color:#bdbdc4;font-size:14px;min-height:44px}
+.price{font-size:21px;font-weight:bold;margin:18px 0}
+.buy{display:block;text-align:center;background:var(--red);padding:11px;border-radius:4px;font-weight:bold;cursor:pointer}
+.banner{background:var(--red);border-radius:12px;padding:45px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.banner h2{max-width:600px}
+.banner p{margin-top:10px;max-width:600px}
+.banner .btn{background:var(--black);margin:0}
+footer{border-top:1px solid #29292e;color:#aaa;padding:35px 24px}
+.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+small{color:#777}
+@media(max-width:760px){nav{display:none}.grid{grid-template-columns:1fr}.hero{min-height:560px}.hero:after{opacity:.35}.banner{padding:28px;display:block}.banner .btn{margin-top:20px}.section-head{display:block}.section-head p{margin-top:10px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="#"><span class="logo-mark"></span>JARVO</a>
+    <nav><a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+    <a class="cart" href="#productos">🛒 Ver productos</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="kicker">JARVO — Equipamiento para tu ruta</div>
+    <h1>Tu ruta.<br><span>Tu estilo.</span><br>Tu equipo.</h1>
+    <p>Accesorios y equipamiento funcional para motociclistas que viven cada kilómetro con actitud, seguridad y personalidad.</p>
+    <a class="btn" href="#productos">Explorar productos</a>
+    <a class="btn secondary" href="#nosotros">Conoce JARVO</a>
+  </div>
+</section>
+
+<section id="productos">
+  <div class="section-head">
+    <div><div class="kicker">Selección JARVO</div><h2>Productos destacados</h2></div>
+    <p>Una muestra de la tienda. Reemplaza estos productos por tus referencias reales y sus precios.</p>
+  </div>
+  <div class="grid">
+    <article class="card"><div class="product-img">🧤</div><div class="card-body"><div class="tag">Protección</div><h3>Guantes urbanos</h3><p>Comodidad y protección para tus recorridos diarios.</p><div class="price">$89.900 COP</div><a class="buy" href="https://wa.me/573000000000?text=Hola%20JARVO,%20me%20interesan%20los%20guantes%20urbanos" target="_blank">Consultar por WhatsApp</a></div></article>
+    <article class="card"><div class="product-img">🪖</div><div class="card-body"><div class="tag">Equipamiento</div><h3>Accesorios para casco</h3><p>Detalles funcionales para personalizar tu experiencia.</p><div class="price">$49.900 COP</div><a class="buy" href="https://wa.me/573000000000?text=Hola%20JARVO,%20me%20interesan%20los%20accesorios%20para%20casco" target="_blank">Consultar por WhatsApp</a></div></article>
+    <article class="card"><div class="product-img">🏍️</div><div class="card-body"><div class="tag">Accesorios</div><h3>Soporte para celular</h3><p>Practicidad para navegar y disfrutar el camino.</p><div class="price">$69.900 COP</div><a class="buy" href="https://wa.me/573000000000?text=Hola%20JARVO,%20me%20interesa%20el%20soporte%20para%20celular" target="_blank">Consultar por WhatsApp</a></div></article>
+  </div>
+</section>
+
+<section id="nosotros">
+  <div class="banner">
+    <div><div class="kicker" style="color:#0B0B0D">Nuestra esencia</div><h2>Diseñado para quienes no se detienen.</h2><p>JARVO nace para reunir estilo, funcionalidad y pasión por las motocicletas en un solo lugar.</p></div>
+    <a class="btn" href="#contacto">Hablemos</a>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="section-head"><div><div class="kicker">Contacto</div><h2>¿Listo para tu próxima ruta?</h2></div><p>Escríbenos para conocer disponibilidad, precios y opciones de entrega.</p></div>
+  <p style="color:#ccc">📲 WhatsApp: <a style="color:var(--red)" href="https://wa.me/573000000000" target="_blank">+57 300 000 0000</a><br>📸 Instagram: <span style="color:var(--red)">@jarvo.co</span><br>📍 Bogotá y Cundinamarca, Colombia</p>
+</section>
+</main>
+
+<footer><div class="footer-inner"><div class="logo"><span class="logo-mark"></span>JARVO</div><small>© 2026 JARVO. Equipamiento para tu ruta.</small></div></footer>
+<script>
+document.querySelectorAll('.buy').forEach(btn=>btn.addEventListener('click',()=>{alert('Este botón abre WhatsApp. Recuerda cambiar el número por el oficial de JARVO antes de publicar la página.');}));
+</script>
+</body>
+</html>
